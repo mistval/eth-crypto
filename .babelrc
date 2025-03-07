@@ -1,6 +1,9 @@
 {
   "presets": ["@babel/preset-env"],
-  "plugins": ["@babel/plugin-transform-runtime"],
+  "plugins": [
+    "@babel/plugin-transform-runtime",
+    "@babel/plugin-transform-private-methods"
+  ],
   "env": {
     "es6": {
       "presets": [
