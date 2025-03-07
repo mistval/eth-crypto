@@ -31,6 +31,24 @@ const configuration = {
         }
     },
 
+    browserify: {
+        debug: true,
+        transform: [
+            [
+                'babelify',
+                {
+                    global: true,
+                    only: [
+                        /node_modules[\\/]ethers[\\/]/
+                    ],
+                    presets: [
+                        ['@babel/preset-env']
+                    ],
+                }
+            ]
+        ]
+    },
+
     // Karma plugins loaded
     plugins: [
         'karma-mocha',
