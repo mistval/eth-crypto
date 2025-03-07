@@ -47,8 +47,6 @@ describe('signed-data.md', () => {
             [creatorIdentity.address] // constructor-arguments
         );
 
-        console.log(createCode);
-
         // create create-tx
         const rawTx = {
             from: creatorIdentity.address,
