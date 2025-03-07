@@ -39,7 +39,7 @@ const configuration = {
                 {
                     global: true,
                     only: [
-                        'node_modules/ethers/'
+                        /node_modules[/]ethers[/]/
                     ],
                     presets: [
                         ['@babel/preset-env']
